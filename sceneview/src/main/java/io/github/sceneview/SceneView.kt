@@ -183,7 +183,7 @@ open class SceneView @JvmOverloads constructor(
     sharedOnGestureListener: GestureDetector.OnGestureListener? = null,
     sharedActivity: ComponentActivity? = null,
     sharedLifecycle: Lifecycle? = null,
-) : SurfaceView(context, attrs, defStyleAttr, defStyleRes) {
+) : TextureView(context, attrs, defStyleAttr, defStyleRes) {
 
     val engine = sharedEngine ?: createEglContext().let {
         defaultEglContext = it
